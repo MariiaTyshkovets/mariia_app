@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mariia_app/static/css/main.884597ba.css",
+    "main.js": "/mariia_app/static/js/main.7241de3b.js",
+    "index.html": "/mariia_app/index.html",
+    "main.884597ba.css.map": "/mariia_app/static/css/main.884597ba.css.map",
+    "main.7241de3b.js.map": "/mariia_app/static/js/main.7241de3b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.884597ba.css",
+    "static/js/main.7241de3b.js"
+  ]
+}
