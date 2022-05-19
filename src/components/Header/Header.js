@@ -7,7 +7,7 @@ function Header() {
             <header className="header">
                 <div className='logo'>
                     <div className='logo__img'>
-                        <img src='./burger.png' alt='logo burger'/>
+                        <img src={require('../../img/burger.png')} alt='logo burger'/>
                     </div>
                     <span>Pleasure</span>
                 </div>

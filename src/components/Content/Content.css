@@ -1,8 +1,82 @@
 .main {
     min-height: 70vh;
     background-color: white;
+    position: relative;
 }
 
-.burger-bilder {
-    height: 60vh;
+.container-counter {
+    box-sizing: border-box;
+    min-height: 50px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(61, 3, 103);
+    color: white;
+    display: grid;
+    grid-template-columns: 90px 1fr 150px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: 18px;
+    line-height: 1.5;
 }
+
+.counter__total {
+    font-family: 'Skranji', cursive;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.counter__ingredient {
+    margin: 5px;
+}
+
+.btn-checkout {
+    padding: 10px 15px;
+}
+
+.modal-checkout {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    right: 25%;
+    min-height: 60%;
+    background-color: lightsteelblue;
+    color: rgb(61, 3, 103);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.none {
+    display: none;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bill-ingredients {
+    margin: 0 auto;
+    width: 220px;
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+ul {
+    padding: 0;
+} 

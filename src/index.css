@@ -39,6 +39,10 @@ button:disabled:hover {
   cursor: default;
 }
 
+button:active {
+  background-color: rgba(239, 239, 239, 0.3);
+}
+
 hr {
   border: none;
   height: 2px;
