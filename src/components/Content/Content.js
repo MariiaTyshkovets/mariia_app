@@ -14,21 +14,18 @@ class Content extends React.Component{
             isModalActive: false
         }
 
-        this.removeFromState = this.removeFromState.bind(this);
-        this.addToState = this.addToState.bind(this);
+        this.addIngredientBuilder.bind(this)
     }
 
-    toState () {
-        let ingre = this.props.ingredients;
+    toState = () => {
         let obj = {};
-        for (const [index, element] of ingre.entries()) {
-            let item = element.name;
-            obj[item] = 0;
-        }
+        this.props.ingredients.forEach((item) => {
+            obj[item.name] = 0;
+        })
         return obj;
     };
 
-    addToState (name, price) {
+    addToState = (name, price) => {
         this.setState((oldState) => {
             return {
                 ...oldState,
@@ -41,7 +38,7 @@ class Content extends React.Component{
         })
     }
 
-    removeFromState (name, price) {
+    removeFromState = (name, price) => {
         this.setState((oldState) => {
             return {
                 ...oldState,
@@ -54,7 +51,7 @@ class Content extends React.Component{
         })
     }
 
-    changeActiveModal() {
+    changeActiveModal = () => {
         this.setState((oldState) => {
             return {
                 ...oldState,
@@ -63,16 +60,30 @@ class Content extends React.Component{
         });
     }
 
-    bill () {
+    addToBill = () => {
         let li = "";
         if (this.state.total > 0) {
             Object.entries(this.state.ingredients).forEach(([key, value]) => {
+                let price = this.props.ingredients.filter((item) => item.name === key)[0].price.toFixed(2);
                 if (value > 0) {
-                    li = [li, (<li>{key}: {value} x {this.props.ingredients.filter((item) => item.name === key)[0].price.toFixed(2)} USD</li>)]
+                    li = [li, (<li key={key}>{key}: {value} x {price} USD</li>)]
                 }
             });
         }
         return li;
+    }
+
+    addIngredientBuilder = () => {
+        let block = "";
+        Object.entries(this.state.ingredients).forEach(([key, value]) => {
+            if (value > 0) {
+                let nameOfClass = key.toLowerCase();
+                for (let index = 0; index < value; index++) {
+                    block = [block, (<div className={nameOfClass + " ingredient"} key={nameOfClass + "_" + index}></div>)]
+                }     
+            }
+        });
+        return block;
     }
     
     render() {
@@ -80,7 +91,7 @@ class Content extends React.Component{
             <>
                 <main className="main">
                     <hr/>
-                    <Builder ingredients={this.state.ingredients}/>
+                    <Builder total={this.state.total} builder={this.addIngredientBuilder}/>
                     <div className='container-counter'>
                         <div className='counter__total'>Total:<br/>{this.state.total} USD</div>
                         <div className='counter'>
@@ -88,19 +99,19 @@ class Content extends React.Component{
                             remove={this.removeFromState} nameOfIngredient={item.name} priceOfIngredient={item.price} 
                             key={item.name} counter={this.state.ingredients} />)}                   
                         </div>
-                        <button className='btn-checkout' disabled={this.state.total > 1 ? false : true} onClick={() => this.changeActiveModal()}>Checkout</button>
+                        <button className='btn-checkout' disabled={this.state.total <= 1} onClick={this.changeActiveModal}>Checkout</button>
                     </div>
                     <div className={this.state.isModalActive ? 'modal-checkout' : 'modal-checkout none'}>
                         <h3>Your Bill</h3>
                         <div className='bill-ingredients'>
                             <ul>
-                                {this.bill()}
+                                {this.addToBill()}
                             </ul>
                         </div>
                         <h3>Total: {this.state.total} USD</h3>
                         <div>
                             <button className='btn-checkout'>Confirm</button>
-                            <button className='btn-checkout' onClick={() => this.changeActiveModal()}>Canсel</button>
+                            <button className='btn-checkout' onClick={this.changeActiveModal}>Canсel</button>
                         </div>
                     </div>
                 </main>

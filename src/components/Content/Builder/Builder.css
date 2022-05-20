@@ -1,5 +1,5 @@
 .burger-builder {
-    min-height: 60vh;
+    min-height: 70vh;
     padding: 20px;
     text-align: center;
     display: flex;
@@ -40,9 +40,12 @@
     border-top-right-radius: 2px;
 }
 
+.ingredient {
+    margin: 0 auto 10px;
+}
+
 .cheese {
     width: 41vh;
-    margin: 0 auto 10px;
     height: 7px;
     border-radius: 3.5px;
     background-color: rgb(232, 232, 45);
@@ -50,7 +53,6 @@
 
 .salad {
     width: 42vh;
-    margin: 0 auto 10px;
     height: 10px;
     border-radius: 5px;
     background-color: rgb(43, 171, 43);
@@ -58,7 +60,6 @@
 
 .meat {
     width: 40vh;
-    margin: 0 auto 10px;
     height: 22px;
     border-radius: 11px;
     background-color: rgb(81, 34, 15);
@@ -66,7 +67,6 @@
 
 .bacon {
     width: 41vh;
-    margin: 0 auto 10px;
     height: 6px;
     border-radius: 3px;
     background-color: rgb(128, 70, 49);
@@ -74,7 +74,6 @@
 
 .tomato {
     width: 41vh;
-    margin: 0 auto 10px;
     height: 12px;
     border-radius: 6px;
     background-color: rgb(226, 40, 40);
@@ -82,7 +81,6 @@
 
 .onion {
     width: 42vh;
-    margin: 0 auto 10px;
     height: 8px;
     border-radius: 4px;
     border: 1px solid rgb(142, 99, 50);
