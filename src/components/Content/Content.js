@@ -10,11 +10,12 @@ class Content extends React.Component{
 
         this.state = {
             ingredients: this.toState(),
+            orderedList: [],
             total: "1.00",
             isModalActive: false
         }
 
-        this.addIngredientBuilder.bind(this)
+        this.addIngredientBuilder.bind(this);
     }
 
     toState = () => {
@@ -33,20 +34,26 @@ class Content extends React.Component{
                 ingredients: {
                     ...oldState.ingredients,
                     [name]: +oldState.ingredients[name] + 1
-                },   
+                },
+                orderedList: [...oldState.orderedList, name]
+
             }
         })
     }
 
     removeFromState = (name, price) => {
+        let index = this.state.orderedList.lastIndexOf(name);
+        this.state.orderedList.splice(index, 1)
         this.setState((oldState) => {
+            console.log(index);
             return {
                 ...oldState,
                 total: (+oldState.total - +price).toFixed(2), 
                 ingredients: {
                     ...oldState.ingredients,
-                    [name]: +oldState.ingredients[name] - 1
-                }
+                    [name]: +oldState.ingredients[name] - 1,
+                },
+                orderedList: oldState.orderedList
             }
         })
     }
@@ -75,13 +82,9 @@ class Content extends React.Component{
 
     addIngredientBuilder = () => {
         let block = "";
-        Object.entries(this.state.ingredients).forEach(([key, value]) => {
-            if (value > 0) {
-                let nameOfClass = key.toLowerCase();
-                for (let index = 0; index < value; index++) {
-                    block = [block, (<div className={nameOfClass + " ingredient"} key={nameOfClass + "_" + index}></div>)]
-                }     
-            }
+        this.state.orderedList.forEach((ingre, index) => {
+            let nameOfClass = ingre.toLowerCase();
+            block = [block, (<div className={nameOfClass + " ingredient"} key={nameOfClass + "_" + index}></div>)]  
         });
         return block;
     }
@@ -92,6 +95,7 @@ class Content extends React.Component{
                 <main className="main">
                     <hr/>
                     <Builder total={this.state.total} builder={this.addIngredientBuilder}/>
+                    {console.log(this.state.orderedList)}
                     <div className='container-counter'>
                         <div className='counter__total'>Total:<br/>{this.state.total} USD</div>
                         <div className='counter'>
