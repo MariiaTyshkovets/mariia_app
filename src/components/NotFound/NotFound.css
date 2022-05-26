@@ -1,0 +1,19 @@
+.not-found {
+    max-width: 600px;
+    margin: 50px auto;
+    color: rgb(61, 3, 103);
+    min-height: 50vh;
+    background-color: lightsteelblue;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.not-found h3 {
+    color: rgb(61, 3, 103, 0.8);
+    margin-bottom: 40px;
+}
+
+.not-found p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}

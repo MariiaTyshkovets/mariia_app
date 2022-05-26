@@ -1,0 +1,66 @@
+.prev-orders {
+    padding: 50px 30px;
+    box-sizing: border-box;
+    /* color: rgb(61, 3, 103); */
+}
+
+.prev-orders h3 {
+    font-family: 'Skranji', cursive;
+    color: rgb(207, 151, 215);
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.orders-table {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: rgb(61, 3, 103);
+    border-collapse: collapse;
+}
+
+thead {
+    display: table;
+    width: 100%;
+}
+
+tbody {
+    display: block;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.orders-table th {
+    font-family: 'Skranji', cursive;
+}
+
+.orders-table th, .orders-table td {
+    padding: 10px;
+}
+
+thead tr {
+    align-items: center;
+}
+
+.orders-table td {
+    text-align: center;
+    word-break: keep-all;
+}
+
+tr {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 100px 150px 100px 100px 1fr;
+}
+
+tr:nth-child(2n+1) {
+    background-color: rgb(207, 151, 215, 0.4);
+}
+
+thead tr:nth-child(2n+1) {
+    background-color: rgb(176, 196, 222, 0.8);
+}
+
+tr:nth-child(2n) {
+    background-color: rgb(176, 196, 222, 0.4);
+}

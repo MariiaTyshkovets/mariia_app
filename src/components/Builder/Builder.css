@@ -19,7 +19,7 @@
 }
 
 .top-bun {
-    margin: 0 auto 10px;
+    margin: 0 auto 5px;
     height: 70px;
     border-top-left-radius: 95px;
     border-top-right-radius: 95px;
@@ -28,7 +28,7 @@
 }
 
 .start {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .lower-bun {
@@ -41,34 +41,38 @@
 }
 
 .ingredient {
-    margin: 0 auto 10px;
+    margin: 0 auto 5px;
+    width: 40vh;
+    border-radius: 4px;
+    background-color: crimson;
+    height: 8px;
 }
 
 .cheese {
-    width: 41vh;
-    height: 7px;
-    border-radius: 3.5px;
+    width: 43vh;
+    height: 8px;
+    border-radius: 4px;
     background-color: rgb(232, 232, 45);
 }
 
 .salad {
-    width: 42vh;
-    height: 10px;
-    border-radius: 5px;
+    width: 45vh;
+    height: 12px;
+    border-radius: 6px;
     background-color: rgb(43, 171, 43);
 }
 
 .meat {
     width: 40vh;
-    height: 22px;
-    border-radius: 11px;
+    height: 24px;
+    border-radius: 12px;
     background-color: rgb(81, 34, 15);
 }
 
-.bacon {
+.bacon {    
     width: 41vh;
-    height: 6px;
-    border-radius: 3px;
+    height: 10px;
+    border-radius: 5px;
     background-color: rgb(128, 70, 49);
 }
 
@@ -79,10 +83,17 @@
     background-color: rgb(226, 40, 40);
 }
 
-.onion {
+.chicken {
     width: 42vh;
-    height: 8px;
-    border-radius: 4px;
+    height: 16px;
+    border-radius: 8px;
     border: 1px solid rgb(142, 99, 50);
     background-color: rgb(241, 237, 162);
+}
+
+.pickle {
+    width: 40vh;
+    height: 8px;
+    border-radius: 4px;
+    background-color: rgb(35, 114, 35);
 }

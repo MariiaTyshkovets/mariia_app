@@ -1,0 +1,37 @@
+.modal-checkout {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    right: 25%;
+    min-height: 60%;
+    background-color: lightsteelblue;
+    color: rgb(61, 3, 103);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.none {
+    display: none;
+}
+
+.modal-checkout h3 {
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(61, 3, 103);
+}
+
+.bill-ingredients {
+    margin: 0 auto;
+    width: 220px;
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+ul {
+    padding: 0;
+} 

@@ -1,5 +1,6 @@
 import './Header.css';
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -9,15 +10,26 @@ function Header() {
                     <div className='logo__img'>
                         <img src={require('../../img/burger.png')} alt='logo burger'/>
                     </div>
-                    <span>Pleasure</span>
+                    <Link to='/' className='nav-list__item'><span>Pleasure</span></Link>
                 </div>
                 <nav>
                     <ul className='nav-list'>
-                        <li className='nav-list__item'>First</li>
-                        <li className='nav-list__item'>Second</li>
+                        <li>
+                            <Link to='/mariia_app' className='nav-list__item'>Home</Link>|{" "}
+                        </li>
+                        <li>
+                            <Link to='/mariia_app/orders' className='nav-list__item'>Orders</Link>|{" "}
+                        </li>
+                        <li>
+                            <Link to='/mariia_app/contact' className='nav-list__item'>Contact</Link>|{" "}
+                        </li>
+                        <li>
+                            <Link to='/mariia_app/FAQ' className='nav-list__item'>FAQ</Link>
+                        </li>
                     </ul>
                 </nav>
             </header>
+            <hr/>
         </>
     )
 }

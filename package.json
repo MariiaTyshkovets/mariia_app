@@ -1,4 +1,4 @@
-  {
+{
   "homepage": "https://mariiatyshkovets.github.io/mariia_app",
   "name": "mariia_app",
   "version": "0.1.0",
@@ -39,6 +39,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "axios": "^0.27.2",
+    "gh-pages": "^4.0.0",
+    "react-router-dom": "^6.3.0"
   }
 }
