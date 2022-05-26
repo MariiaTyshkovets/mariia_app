@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/mariia_app/static/css/main.89d6d8ca.css",
-    "main.js": "/mariia_app/static/js/main.5fd09833.js",
+    "main.css": "/mariia_app/static/css/main.b405395f.css",
+    "main.js": "/mariia_app/static/js/main.18a25c57.js",
     "static/media/burger.png": "/mariia_app/static/media/burger.339e452f13b7e5e2ea1e.png",
     "index.html": "/mariia_app/index.html",
-    "main.89d6d8ca.css.map": "/mariia_app/static/css/main.89d6d8ca.css.map",
-    "main.5fd09833.js.map": "/mariia_app/static/js/main.5fd09833.js.map"
+    "main.b405395f.css.map": "/mariia_app/static/css/main.b405395f.css.map",
+    "main.18a25c57.js.map": "/mariia_app/static/js/main.18a25c57.js.map"
   },
   "entrypoints": [
-    "static/css/main.89d6d8ca.css",
-    "static/js/main.5fd09833.js"
+    "static/css/main.b405395f.css",
+    "static/js/main.18a25c57.js"
   ]
 }
