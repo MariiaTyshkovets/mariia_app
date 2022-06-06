@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.5fd366b1.css",
-    "main.js": "/static/js/main.792359e0.js",
-    "static/media/burger.png": "/static/media/burger.339e452f13b7e5e2ea1e.png",
-    "index.html": "/index.html",
-    "main.5fd366b1.css.map": "/static/css/main.5fd366b1.css.map",
-    "main.792359e0.js.map": "/static/js/main.792359e0.js.map"
+    "main.css": "/mariia_app/static/css/main.5fd366b1.css",
+    "main.js": "/mariia_app/static/js/main.ac123cf0.js",
+    "static/media/burger.png": "/mariia_app/static/media/burger.339e452f13b7e5e2ea1e.png",
+    "index.html": "/mariia_app/index.html",
+    "main.5fd366b1.css.map": "/mariia_app/static/css/main.5fd366b1.css.map",
+    "main.ac123cf0.js.map": "/mariia_app/static/js/main.ac123cf0.js.map"
   },
   "entrypoints": [
     "static/css/main.5fd366b1.css",
-    "static/js/main.792359e0.js"
+    "static/js/main.ac123cf0.js"
   ]
 }
