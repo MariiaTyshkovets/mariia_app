@@ -1,0 +1,13 @@
+.par {
+    margin: 0 auto;
+    min-height: 200px;
+    width: 50vh;
+}
+
+.whitePar {
+    background-color: white;
+}
+
+.redPar {
+background-color: red;
+}

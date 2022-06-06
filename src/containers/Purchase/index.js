@@ -183,13 +183,13 @@ class Purchase extends React.Component {
             orderPrice: +(Number(this.props.total - this.state.discount).toFixed(2))
         }
 
-        // url: https://beetroot-burger-app.herokuapp.com/orders ,
+        // url: http://burger-app-back.herokuapp.com/orders ,
 
         const config = {
             method: "post",
-            url: "http://burger-app-back.herokuapp.com/orders",
+            url: "https://beetroot-burger-app.herokuapp.com/orders",
             headers: {
-                // 'Authorization': 'Bearer fbab44e0-5e31-4a93-bc8f-55fe77a066b0',
+                'Authorization': 'Bearer fbab44e0-5e31-4a93-bc8f-55fe77a066b0',
                 'Content-Type': 'application/json'
             },
             data: JSON.stringify(data)

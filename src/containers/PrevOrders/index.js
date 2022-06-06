@@ -1,8 +1,8 @@
 import React from "react";
 import "./PrevOrders.css";
 import axios from "axios";
-import Tr from "../../components/Tr/Tr";
 import Loader from "../../components/Loader/Loader";
+import TableRow from "../../components/TableRow/TableRow";
 
 class PrevOrders extends React.Component {
 
@@ -15,9 +15,9 @@ class PrevOrders extends React.Component {
             isLoading: true
         }
     }
-    // "https://beetroot-burger-app.herokuapp.com/orders" 
+    // "https://burger-app-back.herokuapp.com/orders" 
     componentDidMount () {
-        axios("https://burger-app-back.herokuapp.com/orders").then(res => {
+        axios("https://beetroot-burger-app.herokuapp.com/orders").then(res => {
             const arrOrders = res.data;
 
             this.setState((oldState) => {
@@ -53,7 +53,7 @@ class PrevOrders extends React.Component {
                             </tr>
                         </thead>
                         <tbody>
-                            {this.state.ordersFromBack.map((obj, index) => <Tr key={index + 1} obj={obj} index={index}/>)}
+                            {this.state.ordersFromBack.map((obj, index) => <TableRow key={index + 1} obj={obj} index={index}/>)}
                         </tbody>
                     </table>}
                 </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Tr(props) {
+function TableRow(props) {
 
     return (
         <tr>
@@ -20,4 +20,4 @@ function Tr(props) {
     )
 }
 
-export default Tr;
+export default TableRow;

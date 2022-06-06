@@ -6,12 +6,14 @@ function Header() {
     return (
         <>
             <header className="header">
-                <div className='logo'>
-                    <div className='logo__img'>
-                        <img src={require('../../img/burger.png')} alt='logo burger'/>
+                <Link to='/mariia_app' className='nav-list__item'>
+                    <div className='logo'>
+                        <div className='logo__img'>
+                            <img src={require('../../img/burger.png')} alt='logo burger'/>
+                        </div>
+                        <span>Pleasure</span>
                     </div>
-                    <Link to='/' className='nav-list__item'><span>Pleasure</span></Link>
-                </div>
+                </Link>
                 <nav>
                     <ul className='nav-list'>
                         <li>

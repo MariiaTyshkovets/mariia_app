@@ -6,6 +6,7 @@ import PrevOrders from './containers/PrevOrders';
 import Contact from './components/Contact/Contact';
 import FAQ from './components/FAQ/FAQ';
 import NotFound from './components/NotFound/NotFound';
+import Lesson from './components/Lesson';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/mariia_app/orders' element={<PrevOrders />}/>
         <Route path='/mariia_app/contact' element={<Contact/>}/>
         <Route path='/mariia_app/FAQ' element={<FAQ/>}/>
+        <Route path='/mariia_app/lesson' element={<Lesson/>}/>
         <Route path='/mariia_app/*' element={<NotFound/>}/>
       </Routes>
     </>

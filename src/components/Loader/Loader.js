@@ -4,12 +4,12 @@ import './Loader.css';
 function Loader() {
     return (
         <>
-            <div class="loading">
-                <div class="dot first"></div>
-                <div class="dot second"></div>
-                <div class="dot third"></div>
-                <div class="dot fourth"></div>
-                <div class="dot fifth"></div>
+            <div className="loading">
+                <div className="dot first"></div>
+                <div className="dot second"></div>
+                <div className="dot third"></div>
+                <div className="dot fourth"></div>
+                <div className="dot fifth"></div>
             </div>
         </>
     )
