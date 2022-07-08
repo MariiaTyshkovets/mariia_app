@@ -1,0 +1,36 @@
+.contact {
+    padding: 50px 20px;
+    max-width: 500px;
+    height: 87vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: rgb(61, 3, 103);
+}
+
+.contact h3 {
+    color: rgb(207, 151, 215);
+    font-family: 'Skranji', cursive;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.data-item {
+    display: grid;
+    height: 30px;
+    padding: 5px 10px 15px;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    position: relative;
+}
+
+.data-item-message {
+    display: grid;
+    padding: 10px;
+    gap: 20px;
+}
+
+.contact button {
+    margin: 0 10px;
+    padding: 10px;
+}

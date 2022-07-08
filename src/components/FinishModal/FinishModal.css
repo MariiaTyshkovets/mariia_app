@@ -1,0 +1,11 @@
+.finish-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.finish-modal h3 {
+    color: rgb(61, 3, 103);
+    opacity: 1;
+    line-height: 1.7;
+}

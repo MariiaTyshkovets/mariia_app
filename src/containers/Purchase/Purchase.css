@@ -1,0 +1,106 @@
+.purchase-counter {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: rgb(61, 3, 103);
+}
+
+.purchase-counter-none {
+    display: none;
+}
+
+.purchase-counter h3 {
+    color: rgb(207, 151, 215);
+    font-family: 'Skranji', cursive;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+fieldset {
+    padding: 10px;
+    border: none;
+}
+
+.data-item {
+    display: grid;
+    height: 30px;
+    padding: 5px 10px 15px;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    position: relative;
+}
+
+.label {
+    font-size: 18px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+input {
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-size: 16px;
+    height: 30px;
+    background-color:  rgb(61, 3, 103, 0.8);
+    border: none;
+    color: white;
+    border-radius: 2px;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.9;
+}
+
+.data-item.checkbox {
+    padding: 0 10px;
+}
+
+fieldset button {
+    padding: 10px 15px;
+    float: right;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.order {
+    padding: 10px;
+    color: white;
+    background-color: rgb(61, 3, 103);
+    margin-bottom: 10px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.order-checkbox input {
+    margin-right: 10px;
+}
+
+.order-checkbox label {
+    font-size: 16px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.error {
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(219, 64, 152);
+    left: 120px;
+    text-transform: none;
+}
