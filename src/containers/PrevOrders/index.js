@@ -15,9 +15,9 @@ class PrevOrders extends React.Component {
             isLoading: true
         }
     }
-    // "https://burger-app-back.herokuapp.com/orders" 
+    
     componentDidMount () {
-        axios("https://beetroot-burger-app.herokuapp.com/orders").then(res => {
+        axios("https://burger-app-back.herokuapp.com/orders").then(res => {
             const arrOrders = res.data;
 
             this.setState((oldState) => {

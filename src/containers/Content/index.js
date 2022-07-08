@@ -29,9 +29,9 @@ class Content extends React.Component{
     }
 
     componentDidMount = () => {
-        fetch("https://beetroot-burger-app.herokuapp.com/ingredients").then(res => res.json()).then(order => {
+        fetch("http://burger-app-back.herokuapp.com/ingredients").then(res => res.json()).then(order => {
             this.setState((oldState) => {
-                const orderFromBack = order[0].ingredients.map(e => {return {ingredient: e.name, price: e.price}});
+                const orderFromBack = order.map(e => {return {ingredient: e.ingredient, price: e.price}});
                 let ingredientsFromBack = {};
                 orderFromBack.forEach((item) => {
                     ingredientsFromBack[item.ingredient] = 0;
